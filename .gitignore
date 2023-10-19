@@ -1,0 +1,11 @@
+# Ignores text files
+txt
+
+# Ignores binary files
+bin
+
+# Ignores configuration files
+.env
+
+# Ignores go.sum, that contains information used by Go to record specific hashes and versions of dependencies
+go.sum

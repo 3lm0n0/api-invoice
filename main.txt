@@ -1,0 +1,27 @@
+package main
+
+import (
+	"fmt"
+
+	"github.com/gorilla/mux"
+)
+
+type InvoiceController struct {}
+
+func (ic *InvoiceController) Get(w http.ResponseWriter, r *http.Request) {}
+
+func (ic *InvoiceController) Post(w http.ResponseWriter, r *http.Request) {}
+
+func (ic *InvoiceController) Delete(w http.ResponseWriter, r *http.Request) {}
+
+func main() {
+	router := mux.NewRouter()
+	
+	ic := &InvoiceController{}
+
+	router.HandleFunc("/invoice/{id:[0-9]+}", ic.Get).Methods("GET")
+
+	http.Handle("/", router)
+
+	http.ListenAndServe(":8080", router)
+}
