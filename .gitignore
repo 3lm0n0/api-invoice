@@ -1,5 +1,5 @@
 # Ignores text files
-txt
+.txt
 
 # Ignores binary files
 bin
