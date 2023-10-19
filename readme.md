@@ -29,7 +29,7 @@ func main() {
 ```
 
 Crear factura
-
+```
 {
     "lines": [
         {
@@ -47,12 +47,10 @@ Crear factura
         "identification": "1-1111-1111"
     }
 }
-
-
-
+```
 
 Obtener factura
-
+```
 {
     "response": [
         {
@@ -86,5 +84,5 @@ Obtener factura
         }
     ]
 } 
-
-
+```
+```
